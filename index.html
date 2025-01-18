@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
@@ -22,10 +23,10 @@
                   <td style="padding:2.5%;width:63%;vertical-align:middle">
                     <p class="name" style="text-align: center;">Do-Gon Kim</p>
                     <p>
-                      I'm currently a MS student @ Columbia, working in the <a href="https://roam.me.columbia.edu/">ROAM Lab</a> as a graduate research assistant. My research focuses on robotics, particularly in areas such as tactile sensing, object classification through signal processing and machine learning, and vision-based robotic control systems. 
+                      I'm currently a MS student @ Columbia, working in the <a href="https://roam.me.columbia.edu/">ROAM Lab</a> as a graduate research assistant. My research focuses on robotics, particularly in areas such as tactile sensing, signal processing, machine learning, and robotic control systems. 
                     </p>
                     <p>
-                      Before joining Columbia, I received my Bachelors degree in Mechanical Engineering @ NYU, where I worked in the <a href="https://crrl.poly.edu/">Control/Robotics Research Lab (CRRL)</a> on the autonomous navigation using SLAM algorithms and sensor integration.
+                      Before joining Columbia, I received my Bachelors degree in Mechanical Engineering @ NYU, where I worked in the <a href="https://crrl.poly.edu/">Control/Robotics Research Lab (CRRL)</a> on the autonomous navigation using SLAM algorithms.
                     </p>
                     <p style="text-align:center">
                       <a href="mailto:dk3322@columbia.edu">Email</a> &nbsp;/&nbsp;
@@ -43,68 +44,107 @@
                 </tr>
               </tbody>
             </table>
+            <!-- Research Section -->
+            <h2>Research</h2>
+            <p>
+              My current research focuses on tactile sensing, and robotic manipulation, with a goal to develop systems that respond to the physical world using advanced sensing mechanism.
+            </p>
 
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin:auto;">
+            <!-- Projects Section -->
+            <h2>Recent Projects</h2>
+            <table style="width:100%;margin:auto;border-spacing:0px;">
               <tbody>
-                <tr>
-                  <td style="padding:16px;width:100%;vertical-align:middle">
-                    <h2>Research</h2>
-                    <p>
-                      My research focuses on acoustic sensing, tactile sensing, and robotic manipulation. I'm particularly interested in developing systems that can understand and respond to the physical world using advanced sensing technologies.
-                    </p>
+                <tr onmouseout="vibecheck_stop()" onmouseover="vibecheck_start()">
+                  <td style="padding:16px;width:20%;vertical-align:middle">
+                    <div class="one">
+                      <div class="two" id="vibecheck_image" style="opacity:0; transition: opacity 0.5s;">
+                        <video width="100%" muted autoplay loop>
+                          <source src="images/peg_in_hole_task.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                      <img src="images/peg_in_hole_task.jpg" width="100%" alt="Vibecheck Project Image">
+                    </div>
+                  </td>
+                  <td style="padding:16px;width:80%;vertical-align:middle">
+                    <strong>Vibecheck:</strong> Designed and developed fingers to enable active acoustic sensing for manipulation, enabling material classification, internal structure classification, object state classification, grasp point estimation, contact type estimation.
+                  </td>
+                </tr>
+                <tr onmouseout="deepracer_stop()" onmouseover="deepracer_start()">
+                  <td style="padding:16px;width:20%;vertical-align:middle">
+                    <div class="one">
+                      <div class="two" id="deepracer_image" style="opacity:0; transition: opacity 0.5s;">
+                        <video width="100%" muted autoplay loop>
+                          <source src="images/pose_velocity_calc.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                      <img src="images/Deep_Racer.jpeg" width="100%" alt="DeepRacer Project Image">
+                    </div>
+                  </td>
+                  <td style="padding:16px;width:80%;vertical-align:middle">
+                    <strong>DeepRacer:</strong> Developed a real-time ArUco marker detection system with OpenCV, allowing for efficient processing and accurate determination of position, orientation, and speed of markers, which were integrated into dynamic vision-based applications.
+                  </td>
+                </tr>
+                <tr onmouseout="deepracer_simulation_stop()" onmouseover="deepracer_simulation_start()">
+                  <td style="padding:16px;width:20%;vertical-align:middle">
+                    <div class="one">
+                      <div class="two" id="deepracer_simulation_image" style="opacity:0; transition: opacity 0.5s;">
+                        <video width="100%" muted autoplay loop>
+                          <source src="images/Simulation.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                      <img src="images/Simulation.jpg" width="100%" alt="DeepRacer Project Image">
+                    </div>
+                  </td>
+                  <td style="padding:16px;width:80%;vertical-align:middle">
+                    <strong>DeepRacer:</strong> Designed simulation framework for autonomous vehicles using ROS2 and PyBullet, enabling machine learning model testing without physical hardware.
                   </td>
                 </tr>
               </tbody>
             </table>
 
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:16px;width:100%;vertical-align:middle">
-                    <h2>Recent Projects</h2>
-                    <ul>
-                      <li>
-                        <strong>Vibecheck:</strong> Explored active acoustic sensing for robotic manipulation, including material classification, Internal structure classification, object state classification, grasp point estimation, contact type estimation.
-                      </li>
-                      <li>
-                        <strong>DeepRacer Project:</strong> Developed a simulation framework using ROS2 and PyBullet in AWS DeepRacer, enabling ML model testing without physical hardware and fostering a dynamic environment for autonomous vehicle research.
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <!-- Teaching Section -->
+            <h2>Teaching</h2>
+            <p>
+              Teaching Assistant for Intro to Robotics (MECE E4602) @ Columbia.<br>
+              Teaching Assistant for Digital Control Systems (EEME E4601) @ Columbia.
+            </p>
 
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:16px;width:100%;vertical-align:middle">
-                    <h2>Teaching</h2>
-                    <p>
-                      Teaching Assistant for the Intro to Robotics course (MECE E4602) @ Columbia University.
-                    </p>
-                    <p>
-                      Teaching Assistant for the Digital Control Systems course (EEME E4601) @ Columbia University.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:0px">
-                    <p style="text-align:right;font-size:small;">
-                      This website is adapted and inspired by the open-source <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron Website</a>. Feel free to check out the source code on <a href="https://github.com/do-gon/do-gon.github.io">GitHub</a>.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <!-- Footer Section -->
+            <p style="text-align:right;font-size:small;">
+              This website is inspired by <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's Website</a>.
+            </p>
           </td>
         </tr>
       </tbody>
     </table>
+
+    <script type="text/javascript">
+      // Hover effects for videos
+      function vibecheck_start() {
+        document.getElementById('vibecheck_image').style.opacity = "1";
+      }
+      function vibecheck_stop() {
+        document.getElementById('vibecheck_image').style.opacity = "0";
+      }
+      function deepracer_simulation_start() {
+        document.getElementById('deepracer_simulation_image').style.opacity = "1";
+      }
+      function deepracer_simulation_stop() {
+        document.getElementById('deepracer_simulation_image').style.opacity = "0";
+      }
+      function deepracer_start() {
+        document.getElementById('deepracer_image').style.opacity = "1";
+      }
+      function deepracer_stop() {
+        document.getElementById('deepracer_image').style.opacity = "0";
+      }
+      // Initialize with videos hidden
+      vibecheck_stop();
+      deepracer_stop();
+      deepracer_simulation_stop();
+    </script>
   </body>
 </html>
