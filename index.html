@@ -63,13 +63,15 @@
               </span>
             </div>
 
-            <a href="#" id="toggle-btn" onclick="toggleUpdates()" style="text-decoration: none; display: inline-block; margin-bottom: 24px;">(+) More ▼</a>
+            <a href="#" id="toggle-btn" onclick="toggleUpdates(event)" style="text-decoration: none; display: inline-block; margin-bottom: 24px;">(+) More ▼</a>
 
             <script>
-              function toggleUpdates() {
+              function toggleUpdates(event) {
+                event.preventDefault();  // Prevents scroll to top
+            
                 const updates = document.getElementById("hidden-updates");
                 const button = document.getElementById("toggle-btn");
-
+            
                 if (updates.style.display === "none") {
                   updates.style.display = "inline";
                   button.innerHTML = "(-) Less ▲";
@@ -78,7 +80,7 @@
                   button.innerHTML = "(+) More ▼";
                 }
               }
-            </script>
+            </script>            
 
             <!-- Research Section -->
             <h2 style="font-weight: normal;">Research</h2>
