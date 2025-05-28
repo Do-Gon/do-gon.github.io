@@ -25,10 +25,10 @@
                   <td style="padding:2.5%;width:63%;vertical-align:middle">
                     <p class="name" style="text-align: center;">Do-Gon Kim</p>
                     <p>
-                      I recently completed my MS in Mechanical Engineering at Columbia University. I'm continuing my research in the <a href='https://roam.me.columbia.edu/'>ROAM Lab</a> with <a href='https://www.ricandrobots.com/'>Eric Chang</a>, and in Prof. <a href='https://www.me.columbia.edu/homayoon-beigi'>Homayoon Beigi</a>’s group. My work focuses on robotics, with an emphasis on tactile sensing, signal processing, and control systems.
+                      I recently completed my MS in Mechanical Engineering @ Columbia University. I'm continuing my research in the <a href='https://roam.me.columbia.edu/'>ROAM Lab</a> with <a href='https://www.ricandrobots.com/'>Eric Chang</a>, and in Prof. <a href='https://www.me.columbia.edu/homayoon-beigi'>Homayoon Beigi</a>’s group. My work focuses on robotics, with an emphasis on tactile sensing, signal processing, and control systems.
                     </p>
                     <p>
-                      Before joining Columbia, I received my Bachelors degree in Mechanical Engineering @ NYU, where I worked in the <a href="https://crrl.poly.edu/">Control/Robotics Research Lab (CRRL)</a> on the autonomous navigation using SLAM algorithms.
+                      Before joining Columbia, I received my Bachelors degree in Mechanical Engineering @ New York University, where I worked in the <a href="https://crrl.poly.edu/">Control/Robotics Research Lab (CRRL)</a> on the autonomous navigation using SLAM algorithms.
                     </p>
                     <p style="text-align:center">
                       <!-- <a href="mailto:dk3322@columbia.edu">Email</a> &nbsp;/&nbsp; -->
@@ -51,7 +51,7 @@
             <!-- Recent Updates Section -->
             <h2 style="font-weight: normal; margin-bottom: 0px;">Recent Updates</h2>
 
-            <div style="line-height: 1.6;">
+            <p style="line-height: 1.6; margin-top: 12px; margin-bottom: 0;">
               [5-2025] Joined Prof. Homayoon Beigi's (non-linear system) group<br>
               [5-2025] Graduated from Columbia University!<br>
 
@@ -60,8 +60,9 @@
                 [1-2024] Joined DitecT Lab<br>
                 [9-2023] Started MS Program @ Columbia University<br>
                 [1-2023] Graduated from New York University!<br>
+                [6-2022] Joined CRRL<br>
               </span>
-            </div>
+            </p>
 
             <a href="#" id="toggle-btn" onclick="toggleUpdates(event)" style="text-decoration: none; display: inline-block; margin-bottom: 24px;">(+) More ▼</a>
 
@@ -87,9 +88,6 @@
             <p>
               My current research focuses on tactile sensing, robotic manipulation, and control systems, aiming to develop robots that better understand and respond to the physical world.
             </p>
-
-            <!-- Publications Section -->
-            <h2 style="font-weight: normal;">Publications</h2>
             <table style="width:100%;margin:auto;border-spacing:0px;">
               <tbody>
 
@@ -115,32 +113,6 @@
                   </td>
                 </tr>
 
-              </tbody>
-            </table>
-
-
-            <!-- Projects Section -->
-            <h2 style="font-weight: normal;">Recent Projects</h2>
-            <table style="width:100%;margin:auto;border-spacing:0px;">
-              <tbody>
-
-                <!-- <tr onmouseout="peg_in_hole_stop()" onmouseover="peg_in_hole_start()">
-                  <td style="padding:16px;width:20%;vertical-align:middle">
-                    <div class="one">
-                      <div class="two" id="peg_in_hole_image" style="opacity:0; transition: opacity 0.5s;">
-                        <video width="100%" muted autoplay loop>
-                          <source src="images/peg_in_hole_task.mp4" type="video/mp4">
-                          Your browser does not support the video tag.
-                        </video>
-                      </div>
-                      <img src="images/peg_in_hole_task.jpg" width="100%" alt="Vibecheck Project Image">
-                    </div>
-                  </td>
-                  <td style="padding:16px;width:80%;vertical-align:middle">
-                    <strong>Vibecheck:</strong> Designed and developed fingers to enable active acoustic sensing for manipulation, allowing for material classification, internal structure classification, object state classification, grasp point estimation, contact type estimation.
-                  </td>
-                </tr> -->
-
                 <tr onmouseout="vision_stop()" onmouseover="vision_start()">
                   <td style="padding:16px;width:20%;vertical-align:middle">
                     <div class="one">
@@ -154,7 +126,9 @@
                     </div>
                   </td>
                   <td style="padding:16px;width:80%;vertical-align:middle">
-                    <strong>Vibecheck:</strong> Built a vision-based control system for robotic grippers, integrating ArUco markers and MediaPipe for hands-free operation.
+                    <strong>Hand Gesture-Based Robotic Gripper Control</strong><br>
+                    Research Project | ROAM Lab | Columbia University<br>
+                    Built a vision-based control system for robotic grippers, integrating ArUco markers and MediaPipe for hands-free operation.
                   </td>
                 </tr>
 
@@ -171,10 +145,12 @@
                     </div>
                   </td>
                   <td style="padding:16px;width:80%;vertical-align:middle">
-                    <strong>Deep Racer Autonomous Vehicle:</strong> Developed a real-time ArUco marker detection system with OpenCV, allowing for efficient processing and accurate determination of position, orientation, and speed of markers, which were integrated into dynamic vision-based control.
+                    <strong>Vision-Guided Localization for Scaled Smart Intersection using ArUco Marker Tracking</strong><br>
+                    Research Project | DitecT Lab | Columbia University<br>
+                    Developed a real-time ArUco marker detection system with OpenCV, allowing for efficient processing and accurate determination of position, orientation, and speed of markers.
                   </td>
                 </tr>
-
+              
                 <tr onmouseout="deepracer_simulation_stop()" onmouseover="deepracer_simulation_start()">
                   <td style="padding:16px;width:20%;vertical-align:middle">
                     <div class="one">
@@ -188,12 +164,40 @@
                     </div>
                   </td>
                   <td style="padding:16px;width:80%;vertical-align:middle">
-                    <strong>Deep Racer Autonomous Vehicle:</strong> Designed simulation framework for autonomous vehicles using ROS2 and PyBullet, enabling machine learning model testing without physical hardware.
+                    <strong>A ROS-Integrated PyBullet Simulation Framework for AWS DeepRacer</strong> <br>
+                    Research Project | DitecT Lab | Columbia University<br>
+                    Designed simulation framework for autonomous vehicles using ROS2 and PyBullet, enabling machine learning model testing without physical hardware.<br>
+                    Paper / Github
                   </td>
                 </tr>
 
               </tbody>
             </table>
+
+            <!-- Projects Section -->
+            <!-- <h2 style="font-weight: normal;">Recent Projects</h2>
+            <table style="width:100%;margin:auto;border-spacing:0px;">
+              <tbody>
+
+                <tr onmouseout="peg_in_hole_stop()" onmouseover="peg_in_hole_start()">
+                  <td style="padding:16px;width:20%;vertical-align:middle">
+                    <div class="one">
+                      <div class="two" id="peg_in_hole_image" style="opacity:0; transition: opacity 0.5s;">
+                        <video width="100%" muted autoplay loop>
+                          <source src="images/peg_in_hole_task.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                      <img src="images/peg_in_hole_task.jpg" width="100%" alt="Vibecheck Project Image">
+                    </div>
+                  </td>
+                  <td style="padding:16px;width:80%;vertical-align:middle">
+                    <strong>Vibecheck:</strong> Designed and developed fingers to enable active acoustic sensing for manipulation, allowing for material classification, internal structure classification, object state classification, grasp point estimation, contact type estimation.
+                  </td>
+                </tr>
+
+              </tbody>
+            </table> -->
 
             <!-- Teaching Section -->
             <h2 style="font-weight: normal;">Teaching</h2>
