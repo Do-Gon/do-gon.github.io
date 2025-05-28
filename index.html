@@ -167,7 +167,27 @@
                     <strong>A ROS-Integrated PyBullet Simulation Framework for AWS DeepRacer</strong> <br>
                     Research Project | DitecT Lab | Columbia University<br>
                     Designed simulation framework for autonomous vehicles using ROS2 and PyBullet, enabling machine learning model testing without physical hardware.<br>
-                    Paper / Github
+                    <a href='data/Final_Report_AWS_Deepracer.pdf'>Paper</a> / <a href='https://github.com/Do-Gon/DeepRacer_Simulator'>Github</a>
+                  </td>
+                </tr>
+
+                <tr onmouseout="intro_to_robotics_final_stop()" onmouseover="intro_to_robotics_final_start()">
+                  <td style="padding:16px;width:20%;vertical-align:middle">
+                    <div class="one">
+                      <div class="two" id="intro_to_robotics_final_image" style="opacity:0; transition: opacity 0.5s;">
+                        <video width="100%" muted autoplay loop>
+                          <source src="images/intro_to_robotics_final.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                      <img src="images/Introduction_to_Robotics_Final_project.jpg" width="100%" alt="Introduction to Robotics Project Image">
+                    </div>
+                  </td>
+                  <td style="padding:16px;width:80%;vertical-align:middle">
+                    <strong>A Study on Cable-Driven Parallel Robot with Adaptive Velocity Controller in Distribution Warehouse</strong> <br>
+                    Course Project | MECE E4602 Introduction to Robotics | Columbia University<br>
+                    Developed an adaptive velocity controller for a 4-cable-driven parallel robot, enabling dynamic speed adjustments based on the different objects, which enhances precision in handling diverse materials.<br>
+                    <a href='data/Final_Report_AWS_Deepracer.pdf'>Paper</a> / <a href='images/Final_Project_Presentation_Video_Group_13.mp4'>Video</a>
                   </td>
                 </tr>
 
@@ -241,11 +261,18 @@
       function vision_stop() {
         document.getElementById('vision_based_control_image').style.opacity = "0";
       }
+      function intro_to_robotics_final_start() {
+        document.getElementById('intro_to_robotics_final_image').style.opacity = "1";
+      }
+      function intro_to_robotics_final_stop() {
+        document.getElementById('intro_to_robotics_final_image').style.opacity = "0";
+      }
       // Initialize with videos hidden
       vibecheck_stop();
       vision_stop();
       deepracer_stop();
       deepracer_simulation_stop();
+      intro_to_robotics_final_stop();
     </script>
   </body>
 </html>
