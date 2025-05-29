@@ -191,6 +191,36 @@
                   </td>
                 </tr>
 
+                <tr onmouseout="turtlebot_project_stop()" onmouseover="turtlebot_project_start()">
+                  <td style="padding:16px;width:20%;vertical-align:middle">
+                    <div class="one" style="position: relative;">
+                      <!-- Image that appears on hover -->
+                      <img id="turtlebot_project_image" src="images/turtlebot2.png" style="opacity:0; transition: opacity 0.5s; position: absolute; top: 0; left: 0; width: 100%;">
+                      
+                      <!-- Default image -->
+                      <img id="turtlebot_project_image_default" src="images/turtlebot1.png" style="width: 100%;" alt="turtlebot project Image">
+                    </div>
+                  </td>
+                  <td style="padding:16px;width:80%;vertical-align:middle">
+                    <strong>Autonomous Navigation</strong> <br>
+                    Research Project | CRR Lab | New York University<br>
+                    Enabled Turtlebot3 Burger to detect obstacles, map the environment, and autonomously navigate in an uncertain environment.<br>
+                    <a href='data/2022.pdf'>Abstract Booklet</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding:16px; width:20%; vertical-align:middle">
+                    <img src="images/robot_vision_final_project.jpg" style="width:100%; aspect-ratio:1; object-fit:cover;" alt="robot vision final project image">
+                  </td>
+                  <td style="padding:16px; width:80%; vertical-align:middle">
+                    <strong>Sheet Music Sight-Reader</strong> <br>
+                    Course Project | ROB-UY 3203 Robot Vision | New York University<br>
+                    Created a Colab-based CV pipeline that takes in the image of a sheet of music and outputs a playable music file.<br>
+                    <a href='https://github.com/Do-Gon/ROB-UY-3203-Robot-Vision-Project'>Github</a>
+                  </td>
+                </tr>
+
               </tbody>
             </table>
 
@@ -267,12 +297,20 @@
       function intro_to_robotics_final_stop() {
         document.getElementById('intro_to_robotics_final_image').style.opacity = "0";
       }
+      function turtlebot_project_start() {
+        document.getElementById('turtlebot_project_image').style.opacity = "1";
+      }
+      function turtlebot_project_stop() {
+        document.getElementById('turtlebot_project_image').style.opacity = "0";
+      }
+
       // Initialize with videos hidden
       vibecheck_stop();
       vision_stop();
       deepracer_stop();
       deepracer_simulation_stop();
       intro_to_robotics_final_stop();
+      turtlebot_project_stop();
     </script>
   </body>
 </html>
