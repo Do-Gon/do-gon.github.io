@@ -140,3 +140,11 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+img.hoverZoomLink {
+  transition: transform 1s ease;
+}
+
+img.hoverZoomLink:hover {
+  transform: rotate(360deg);
+}
