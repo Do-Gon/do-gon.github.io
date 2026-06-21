@@ -10,10 +10,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="icon" type="image/png" href="images/arm_emoji.png">
+    <style>
+      body {
+        background-color: white;
+        color: black;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      #theme-toggle {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 48px;
+        height: 48px;
+        border: none;
+        border-radius: 50%;
+        font-size: 22px;
+        cursor: pointer;
+        z-index: 9999;
+        background-color: #eeeeee;
+        color: black;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      body.dark-mode {
+        background-color: #121212;
+        color: white;
+      }
+
+      body.dark-mode table,
+      body.dark-mode td,
+      body.dark-mode p,
+      body.dark-mode h1,
+      body.dark-mode h2,
+      body.dark-mode h3,
+      body.dark-mode strong,
+      body.dark-mode span {
+        color: white;
+      }
+
+      body.dark-mode a {
+        color: #8ab4f8;
+      }
+
+      body.dark-mode #theme-toggle {
+        background-color: #333333;
+        color: white;
+      }
+    </style>
   </head>
 
   <body>
-
+    <button id="theme-toggle" onclick="toggleTheme()">🌙</button>
     <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin:auto;">
       <tbody>
         <tr style="padding:0px">
@@ -409,6 +457,35 @@
       deepracer_simulation_stop();
       intro_to_robotics_final_stop();
       turtlebot_project_stop();
+    </script>
+    <script>
+      function toggleTheme() {
+        const body = document.body;
+        const button = document.getElementById("theme-toggle");
+
+        body.classList.toggle("dark-mode");
+
+        if (body.classList.contains("dark-mode")) {
+          button.innerHTML = "☀️";
+          localStorage.setItem("theme", "dark");
+        } else {
+          button.innerHTML = "🌙";
+          localStorage.setItem("theme", "light");
+        }
+      }
+
+      window.addEventListener("DOMContentLoaded", function () {
+        const savedTheme = localStorage.getItem("theme");
+        const button = document.getElementById("theme-toggle");
+
+        if (savedTheme === "dark") {
+          document.body.classList.add("dark-mode");
+          button.innerHTML = "☀️";
+        } else {
+          document.body.classList.remove("dark-mode");
+          button.innerHTML = "🌙";
+        }
+      });
     </script>
   </body>
 </html>
